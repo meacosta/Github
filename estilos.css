@@ -1,0 +1,482 @@
+/*colores*/
+* {
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  
+  .grillaArea {
+    display: grid;
+    grid-template-areas: "cabeza cabeza cabeza" 
+    "menu menu menu" 
+    "imagenes imagenes imagenes" 
+    "pie pie pie";
+    grid-template-rows: 500px 400px 100px 400px;
+    grid-column: 1fr 1fr 1fr 1fr;
+  }
+  
+  .header {
+    grid-area: cabeza;
+    font-size: 30px;
+    background-color: #b0cccf;
+    text-align: center;
+  }
+  
+  h1 {
+    padding: 200px;
+    margin-top: 300px;
+    font-family: "Anton", "sans-serif";
+  }
+  
+  h3 {
+    padding: 10px;
+    font-size: 40px;
+  }
+  
+  h4 {
+    padding: 10px;
+    margin-top: 80px;
+  }
+  
+  P {
+    padding: 10px;
+    margin-top: 150px;
+    font-family: "Lobster", cursive;
+    background-color: #eae9ec;
+  }
+  
+  .menu {
+    grid-area: menu;
+    font-size: 30px;
+    background-color: #9f9691;
+    text-align: center;
+  }
+  
+  .imagenes {
+    grid-area: imagenes;
+    background-image: url(imagenes/carousel2.jpeg);
+    background-attachment: fixed ;
+  }
+  
+  .footer {
+    grid-area: pie;
+    background-color: #70130e;
+    color: white;
+  }
+  
+  iframe {
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+  
+  footer h2 {
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+  
+  .claseParaMenu {
+    font-size: 150px;
+    font-weight: bold;
+  }
+  
+  header img {
+    border-radius: 100%;
+  }
+  
+  .a {
+    list-style: none;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .pizza {
+    grid-area: menu;
+    background-color: #9f9691;
+    width: 100%;
+    margin: 0 auto;
+    position: absolute;
+  }
+  
+  .pizza__lista {
+    list-style: none;
+    text-align: center;
+    font-size: 40px;
+  }
+  
+  .pizza__lista--subrayado {
+    font-weight: bold;
+  }
+  
+  .birra {
+    grid-area: imagenes;
+    
+    background-color: #6c9400;
+    width: 100%;
+    margin-top: 300px;
+    position: absolute;
+  }
+  
+  .birra__lista {
+    list-style: none;
+    text-align: center;
+    font-size: 40px;
+  }
+  
+  .birra__lista--subrayado {
+    font-weight: bold;
+  }
+
+  .fondoNosotros {
+    grid-area: menu;
+    background-image: url(imagenes/fondo.jpg);
+    height: 800px;
+    text-align: center;
+}
+section div p {
+    margin-top: 0px;
+    text-align: center;
+    font-size: 30px;
+}
+
+  .animacion {
+    animation-duration: 2s;
+    animation-name: appear;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+
+.transition {
+    transition: all 2s;
+    text-decoration: none;
+    color: black;
+}
+
+.transition :hover {
+    font-size: 30px;
+    color: red;
+}
+  
+  /*tablet*/
+  @media (min-width: 480px) and (max-width: 1024px) {
+    .grillaArea {
+      display: grid;
+      grid-template-areas: "cabeza cabeza cabeza" "menu menu menu" "imagenes imagenes imagenes" "pie pie pie";
+      grid-template-rows: 500px 400px 100px 400px;
+      grid-column: 1fr 1fr 1fr 1fr;
+    }
+  
+    .header {
+      grid-area: cabeza;
+      font-size: 30px;
+      background-color: #b0cccf;
+      text-align: center;
+    }
+  
+    h1 {
+      padding: 200px;
+      margin-top: 300px;
+      font-family: "Anton", "sans-serif";
+    }
+  
+    h3 {
+      padding: 10px;
+      font-size: 40px;
+    }
+  
+    h4 {
+      padding: 10px;
+      margin-top: 80px;
+    }
+  
+    P {
+      padding: 10px;
+      margin-top: 150px;
+      font-family: "Lobster", cursive;
+      background-color: #eae9ec;
+    }
+  
+    .menu {
+      grid-area: menu;
+      font-size: 30px;
+      background-color: #9f9691;
+      text-align: center;
+    }
+  
+    .imagenes {
+      grid-area: imagenes;
+      background-image: url(imagenes/carousel2.jpeg);
+      background-attachment: fixed ;
+    }
+  
+    .footer {
+      grid-area: pie;
+      background-color: #70130e;
+      color: white;
+    }
+  
+    iframe {
+      margin-top: 10px;
+      margin-left: 10px;
+    }
+  
+    footer h2 {
+      margin-left: 10px;
+      margin-top: 10px;
+    }
+  
+    .claseParaMenu {
+      font-size: 150px;
+      font-weight: bold;
+    }
+  
+    header img {
+      border-radius: 100%;
+    }
+  
+    .a {
+      list-style: none;
+      text-decoration: none;
+      color: black;
+    }
+  
+    .pizza {
+      grid-area: menu;
+      background-color: #9f9691;
+      width: 100%;
+      margin: 0 auto;
+      position: absolute;
+    }
+  
+    .pizza__lista {
+      list-style: none;
+      text-align: center;
+      font-size: 40px;
+    }
+  
+    .pizza__lista--subrayado {
+      font-weight: bold;
+    }
+  
+    .birra {
+      grid-area: imagenes;
+      background-color: #6c9400;
+      width: 100%;
+      margin-top: 300px;
+      position: absolute;
+    }
+  
+    .birra__lista {
+      list-style: none;
+      text-align: center;
+      font-size: 40px;
+    }
+  
+    .birra__lista--subrayado {
+      font-weight: bold;
+    }
+
+    .fondoNosotros {
+        grid-area: menu;
+        background-image: url(imagenes/fondo.jpg);
+        height: 800px;
+        text-align: center;
+    }
+    section div p {
+        margin-top: 0px;
+        text-align: center;
+        font-size: 30px;
+    }
+    
+      .animacion {
+        animation-duration: 2s;
+        animation-name: appear;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in;
+    }
+
+    .transition {
+        transition: all 2s;
+        text-decoration: none;
+        color: black;
+    }
+
+    .transition :hover {
+        font-size: 30px;
+        color: red;
+    }
+  }
+  /*Escritorio*/
+  @media (min-width: 1025px) {
+    .grillaArea {
+      display: grid;
+      grid-template-areas: "cabeza cabeza cabeza"
+       "menu menu menu" 
+       "imagenes imagenes imagenes" 
+       "pie pie pie";
+      grid-template-rows: 500px 400px 400px 400px;
+      grid-column: 1fr 1fr 1fr 1fr;
+    }
+  
+    .header {
+      grid-area: cabeza;
+      font-size: 30px;
+      background-color: #b0cccf;
+      text-align: center;
+    }
+  
+    h1 {
+      padding: 200px;
+      margin-top: 300px;
+      font-family: "Anton", "sans-serif";
+    }
+  
+    h3 {
+      font-size: 40px;
+      padding: 10px;
+    }
+  
+    h4 {
+      padding: 10px;
+      margin-top: 80px;
+    }
+  
+    P {
+      padding: 10px;
+      margin-top: 150px;
+      font-family: "Lobster", cursive;
+      background-color: #eae9ec;
+    }
+  
+    .menu {
+      grid-area: menu;
+      font-size: 30px;
+      background-color: #9f9691;
+      text-align: center;
+    }
+  
+    .imagenes {
+      grid-area: imagenes;
+      background-image: url(imagenes/carousel2.jpeg);
+      background-attachment: fixed ;
+    }
+  
+    .footer {
+      grid-area: pie;
+      background-color: #70130e;
+      color: white;
+    }
+  
+    iframe {
+      margin-top: 10px;
+      margin-left: 10px;
+    }
+  
+    footer h2 {
+      margin-left: 10px;
+      margin-top: 10px;
+    }
+  
+    .claseParaMenu {
+      font-size: 150px;
+      font-weight: bold;
+    }
+  
+    header img {
+      border-radius: 100%;
+    }
+  
+    .a {
+      list-style: none;
+      text-decoration: none;
+      color: black;
+    }
+  
+    .pizza {
+      grid-area: menu;
+      background-color: #9f9691;
+      width: 100%;
+      margin: 0 auto;
+      position: absolute;
+    }
+  
+    .pizza__lista {
+      list-style: none;
+      text-align: center;
+      font-size: 40px;
+    }
+  
+    .pizza__lista--subrayado {
+      font-weight: bold;
+    }
+  
+    .birra {
+      grid-area: imagenes;
+      background-color: #6c9400;
+      width: 100%;
+      margin-top: 400px;
+      position: absolute;
+    }
+  
+    .birra__lista {
+      list-style: none;
+      text-align: center;
+      font-size: 40px;
+    }
+  
+    .birra__lista--subrayado {
+      font-weight: bold;
+    }
+
+    .fondoNosotros {
+        grid-area: menu;
+        background-image: url(imagenes/fondo.jpg);
+        height: 800px;
+        text-align: center;
+    }
+    section div p {
+        margin-top: 0px;
+        text-align: center;
+        font-size: 30px;
+       
+    }
+
+    
+
+    
+      .animacion {
+        animation-duration: 2s;
+        animation-name: appear;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in;
+    }
+
+
+    .transition {
+        transition: all 2s;
+        text-decoration: none;
+        color: black;
+    }
+
+    .transition :hover {
+        font-size: 30px;
+        color: red;
+    }
+
+
+  }
+
+ 
+
+
+
+
+@keyframes appear {
+    0% {
+        opacity: 0 ;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
